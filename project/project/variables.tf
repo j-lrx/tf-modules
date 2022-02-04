@@ -9,3 +9,7 @@ variable "project_id" {
 variable "org" {
   type = string
 }
+
+variable "folder_id" {
+  type = number
+}
