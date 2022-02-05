@@ -1,7 +1,7 @@
 variable "project" {
   type = string
 }
-variable "project_id" {
+variable "project" {
   type = string
 }
 variable "org_id" {
