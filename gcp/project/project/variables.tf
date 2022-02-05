@@ -5,10 +5,12 @@ variable "project_id" {
   type = string
 }
 variable "org_id" {
-  type = string
+  type      = string
+  nullable  = true
 }
 variable "folder_id" {
-  type = string
+  type      = string
+  nullable  = true
 }
 variable "billing_account" {
   type = string
