@@ -1,7 +1,7 @@
 output "id" {
-  value = "${google_project.my_project.id}"
+  value = "${google_project.project.id}"
 }
 
 output "number" {
-  value = "${google_project.my_project.number}"
+  value = "${google_project.project.number}"
 }
