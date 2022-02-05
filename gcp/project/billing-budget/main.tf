@@ -17,8 +17,11 @@ resource "google_billing_budget" "budget" {
       threshold_percent =  0.9
   }
   
-  all_updates_rule {
-    pubsub_topic =
-    schema_version = "1.0"
+  dynamic "all_updates_rule" {
+    for_each = var.pubsub_topic
+    content {
+      pubsub_topic = var.pubsub_topic
+      schema_version = "1.0"
+    }
   }
 }
