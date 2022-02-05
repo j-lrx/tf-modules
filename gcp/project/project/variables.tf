@@ -4,7 +4,7 @@ variable "project" {
 variable "project_id" {
   type = string
 }
-variable "org" {
+variable "org_id" {
   type = string
 }
 variable "folder_id" {
