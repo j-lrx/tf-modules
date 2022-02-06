@@ -4,11 +4,6 @@ variable "project" {
 variable "project_id" {
   type = string
 }
-variable "org_id" {
-  type      = string
-  nullable  = true
-  default   = ""
-}
 variable "folder_id" {
   type      = string
   nullable  = true
